@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="jquery-ui.css">
+  <script src="jquery-1.10.2.js"></script>
+  <script src="jquery-ui.js"></script>
+
+
+  <style>
+  #containment-wrapper { width: 80%; height:550px; border:2px solid #ccc; padding: 10px; }
+  .draggable { width: 90px; height: 90px; padding: 0.5em; float: left; margin: 0 10px 10px 0; }
+
+  .background-map {
+  	background:url('vancouver.jpg') no-repeat center center;
+
+	/* Ensure the html element always takes up the full height of the browser window */
+	min-height:100%;
+
+	/* The Magic */
+	background-size:cover;
+  }
+  
+  h3 { clear: left; }
+  </style>
+  <script>
+  $(function() {
+    $( "#draggable3" ).draggable({ containment: "#containment-wrapper", scroll: false });
+  });
+  </script>
+</head>
+<body>
+ 
+
+
+<div id="containment-wrapper" class="background-map">
+  <div id="draggable3" class="draggable ui-widget-content">
+    <p>Mobimaps Pin</p>
+  </div>
+</div>
+ 
+ 
+</body>
+</html>
