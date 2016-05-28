@@ -1,0 +1,5 @@
+Saving the pin positions on the map:
+https://forum.jquery.com/topic/save-position-of-draggable-item
+
+Moving a pin in a parent only:
+https://jqueryui.com/draggable/#constrain-movement
